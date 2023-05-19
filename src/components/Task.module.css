@@ -1,0 +1,164 @@
+.createTask {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.createTask input[type="text"] {
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--white);
+  width: 100%;
+}
+
+.createTask button[type="button"] {
+  background-color: var(--blue-dark);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  cursor: pointer;
+  transition: 100ms;
+}
+
+.createTask button[type="button"]:hover {
+  background-color: var(--blue);
+}
+
+.topTask {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.topTask p:nth-child(1) {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.topTask p:nth-child(2) {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.topTask p span {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.notTasks {
+  border-top: 1px solid var(--gray-300);
+  border-radius: 8px;
+  padding-top: 4rem;
+  margin-top: 1.75rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.notTasks > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.notTasks > div strong,
+.notTasks > div p {
+  font-size: 1rem;
+  color: var(--gray-300);
+  text-align: center;
+}
+
+.contentTask {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.75rem;
+}
+
+.contentTask > input[type="checkbox"] {
+  appearance: none;
+  background-color: none;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 3px;
+  outline: none;
+  vertical-align: middle;
+  width: 18px;
+  height: 16px;
+  transition: 100ms;
+}
+
+.contentTask > input[type="checkbox"]:hover {
+  background-color: var(--blue-dark);
+}
+
+.contentTask > input[type="checkbox"]:checked {
+  background-color: var(--purple-dark);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M8.43107 0.342154L4.09914 4.67409L1.61667 2.19162L0.780762 3.02753L4.09914 6.3459L9.26698 1.17806L8.43107 0.342154Z' fill='%23F2F2F2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  transition: 100ms;
+}
+
+.contentTask > input[type="checkbox"]:checked:hover {
+  background-color: var(--purple);
+}
+
+.contentTask > p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--gray-100);
+  margin-right: 1rem;
+}
+
+.contentTask > button[type="button"] {
+  background: none;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  line-height: 0;
+  cursor: pointer;
+  transition: 100ms;
+}
+
+.contentTask > button[type="button"]:hover {
+  background: var(--gray-400);
+  border-radius: 4px;
+}
+
+.contentTask > button[type="button"]:hover svg {
+  color: var(--danger);
+}
+
+.contentTask > button[type="button"] svg {
+  color: var(--gray-300);
+}
+
+.isFinish {
+  text-decoration-line: line-through;
+  opacity: 0.7;
+}
